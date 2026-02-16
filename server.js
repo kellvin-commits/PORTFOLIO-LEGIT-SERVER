@@ -66,7 +66,7 @@ app.post("/api/send", async function (req, res) {
 
     res.status(500).json({
       success: false,
-      message: "Failed to send email"
+      message: error.message
     });
   }
 });
